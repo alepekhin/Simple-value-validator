@@ -23,7 +23,7 @@ import org.hibernate.validator.cfg.defs.PatternDef;
  */
 public class ValueValidator {
 	
-	public enum ValidatorTypes {
+	public static enum ValidatorTypes {
 			CreditCardNumber, Currency, DecimalMax, DecimalMin, Digits, DurationMax, DurationMin,
 			Email, Length, Max, Min, Negative, NegativeOrZero, NotBlank, NotEmpty, NotNull, Null,
 			Past, PastOrPresent, Pattern, Positive, PositiveOrZero, Range, Size, URL

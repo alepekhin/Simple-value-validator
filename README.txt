@@ -5,8 +5,10 @@ It is oriented mainly on annotations so it's not obvious how to check a given va
 Class ValueValidator from this project do it.
 For example, test "abc" lentgth with constraint min=1 max=2
 
+import static alepekhin.validator.ValueValidator.ValidatorTypes.*;
+
 Set<ConstraintViolation<ValueValidator>> errors = 
-    new ValueValidator("abc").validate(ValueValidator.ValidatorTypes.Length, 1, 2);
+    new ValueValidator("abc").validate(Length, 1, 2);
     
 In errors we will get "length must be between 1 and 2"  
 errors will be empty if constraint is satisfied.
